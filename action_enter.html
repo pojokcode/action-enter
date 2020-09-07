@@ -1,0 +1,45 @@
+<!--
+Created Date : Monday, September 7th 2020, 2:28:06 pm
+Author       : Asep Komarudin
+Email        : aasseepp@gmail.com
+-----
+Last Modified: Mon Sep 07 2020
+Modified By  : 
+-----
+Copyright (c) 2020 pojokcode
+
+File ini adalah milik Asep Komarudin.
+Mengunakan file ini harus seijin pemilik
+Silahkan hubungi pemilik code ini
+Segala penyalahgunaan tidak menjadi tanggung jawab Asep Komarudin
+-----
+HISTORY:
+Date      	By	Comments
+----------	---	----------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aCCTION eNTER</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="barcode" id="barcode" class="barcode">
+    </div>
+    <script>
+        $('#barcode').keypress(function (event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+                value=document.getElementById("barcode").value;
+                alert('Inputannya adalah '+value);
+            }
+        });
+    </script>
+</body>
+</html>
